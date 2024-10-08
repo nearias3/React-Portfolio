@@ -1,0 +1,29 @@
+.portfolio {
+  text-align: center;
+  padding: 2rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.project {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.project-links a {
+  margin-right: 1rem;
+  color: #333;
+  text-decoration: underline;
+}

@@ -1,3 +1,5 @@
+import "../styles/Resume.css";
+
 const Resume = () => {
   return (
     <section>

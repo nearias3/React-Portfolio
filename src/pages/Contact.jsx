@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +14,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic
   };
 
   return (

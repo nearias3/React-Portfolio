@@ -1,4 +1,5 @@
 import Project from "../components/Project";
+import "../styles/Portfolio.css";
 
 const Portfolio = () => {
   return (

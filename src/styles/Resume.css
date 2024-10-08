@@ -1,0 +1,20 @@
+.resume {
+  text-align: center;
+  padding: 2rem;
+}
+
+.resume a {
+  display: inline-block;
+  margin: 1rem 0;
+  color: #333;
+  text-decoration: underline;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume li {
+  margin: 0.5rem 0;
+}
