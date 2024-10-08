@@ -15,7 +15,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink
-            to="/"
+            to="/portfolio"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Portfolio
@@ -23,14 +23,17 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink
-            to="/"
+            to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Contact
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+          <NavLink
+            to="/resume"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Resume
           </NavLink>
         </li>
