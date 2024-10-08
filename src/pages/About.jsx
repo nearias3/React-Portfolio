@@ -14,6 +14,7 @@ const About = () => {
         a teacher honed my problem-solving skills and cultivated a deep
         appreciation for clear communication and structured thinking.
       </p>
+      <br></br>
       <p>
         Inspired by a longstanding love for technology, I transitioned into
         software development by completing the rigorous UT Coding Bootcamp. This

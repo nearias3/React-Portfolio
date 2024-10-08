@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .logo {
@@ -35,8 +38,37 @@
 
 .card {
   padding: 2em;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #61dafbaa;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #61dafbaa;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.about, .portfolio, .contact, .resume {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 2rem;
 }

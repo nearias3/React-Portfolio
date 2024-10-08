@@ -1,20 +1,31 @@
 nav {
   background-color: #333;
   padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #5e5e60; 
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 nav a.active {
   border-bottom: 2px solid #fff;
+  background-color: #5e5e60;
 }

@@ -30,6 +30,13 @@ body {
   min-height: 100vh;
 }
 
+h1, h2, h3 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  color: #00bebebc;
+  margin-bottom: 1rem;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -46,23 +53,70 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: #00a4a7;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #adadad;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
   }
   a:hover {
-    color: #747bff;
+    color: #00a4a7;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .about, .portfolio, .contact, .resume {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

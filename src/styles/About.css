@@ -1,16 +1,23 @@
 .about {
-  text-align: center;
-  padding: 2rem;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #00a4a7, #00bebebc);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
 .about-photo {
-  width: 150px; 
+  width: 120px; 
   border-radius: 50%;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+  border: 4px solid #fff;
 }
 
 .about p {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+  color: #f4f4f4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
