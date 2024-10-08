@@ -1,8 +1,10 @@
 import Project from "../components/Project";
+import Collapsible from "../components/Collapsible";
 import "../styles/Portfolio.css";
 import images from "../assets/images";
+import "../styles/Portfolio.css";
 
-const projects = [
+const frontEndProjects = [
   {
     title: "Code Refactor",
     description: "This app is a refactor of a website. I cleaned up the code, fixed a couple of issues for the client, and made it more accessible.",
@@ -35,14 +37,6 @@ const projects = [
   },
 
   {
-    title: "gigON!",
-    description: "In this collaborative project, the user can login using their Spotify account, view their top artists, and  search for concerts by those artists using their location.",
-    image: images.project1,
-    liveLink: "https://cneale92.github.io/gigON/",
-    repoLink: "https://github.com/cneale92/gigON/"
-  },
-
-  {
     title: "README Generator",
     description: "In this app, the user can automate the creation of README files using a node powered prompt in the terminal.",
     image: images.challenge09,
@@ -69,8 +63,10 @@ const projects = [
     description: "This command-line application allows users to manage a company's employee database using node, inquirer, and postgreSQL.",
     image: images.challenge12,
     repoLink: "https://github.com/nearias3/SQL-Employee-Tracker"
-  },
+  }
+]
 
+const backEndProjects = [
 
   {
     title: "E-Commerce Backend",
@@ -79,6 +75,16 @@ const projects = [
     repoLink: "https://github.com/nearias3/ecommerce-backend"
   },
 
+  {
+    title: "Social Network API",
+    description: "This app is the backend for a social networking site built with Node, Express, MongoDB and Mongoose.",
+    image: images.challenge18,
+    repoLink: "https://github.com/nearias3/Social-Network-API"
+  }
+
+]
+
+const fullStackProjects = [
 
   {
     title: "Tech Blog",
@@ -88,29 +94,30 @@ const projects = [
     repoLink: "https://github.com/nearias3/Tech-Blog/"
   },
 
+
+]
+
+const collaborativeProjects = [
+  {
+    title: "gigON!",
+    description:
+      "In this collaborative project, the user can login using their Spotify account, view their top artists, and  search for concerts by those artists using their location.",
+    image: images.project1,
+    liveLink: "https://cneale92.github.io/gigON/",
+    repoLink: "https://github.com/cneale92/gigON/",
+  },
+
   {
     title: "BookNest",
-    description: "In this collaborative project, we bring you BookNest, an app that facilitate's peer-to-peer book lending! Users can create their own collection of books, share with others, and borrow from within their communities.",
+    description:
+      "In this collaborative project, we bring you BookNest, an app that facilitate's peer-to-peer book lending! Users can create their own collection of books, share with others, and borrow from within their communities.",
     image: images.project2,
     liveLink: "https://p2-book-nest.onrender.com/",
-    repoLink: "https://github.com/Lixiviate/P2-Book-Nest"
+    repoLink: "https://github.com/Lixiviate/P2-Book-Nest",
   },
+];
 
-  {
-    title: "Regex Tutorial",
-    description: "This is a gist tutorial in which I breakdown the Regex generator.",
-    image: images.challenge17,
-    liveLink: "https://gist.github.com/nearias3/b460fd7e73e3f0c807bf5b5856d3006e",
-  },
-
-
-  {
-    title: "Social Network API",
-    description: "This app is the backend for a social networking site built with Node, Express, MongoDB and Mongoose.",
-    image: images.challenge18,
-    repoLink: "https://github.com/nearias3/Social-Network-API"
-  },
-
+const otherProjects = [
 
   {
     title: "Text Editor",
@@ -118,8 +125,14 @@ const projects = [
     image: images.challenge19,
     liveLink: "https://text-editor-mzng.onrender.com",
     repoLink: "https://github.com/nearias3/Text-Editor"
-  }
+  },
 
+  {
+    title: "Regex Tutorial",
+    description: "This is a gist tutorial in which I breakdown the Regex generator.",
+    image: images.challenge17,
+    liveLink: "https://gist.github.com/nearias3/b460fd7e73e3f0c807bf5b5856d3006e",
+  }
 ];
 
 
@@ -127,18 +140,82 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <h2>My Portfolio</h2>
-      <div className="projects">
-        {projects.map((project, index) => (
-          <Project
-            key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            liveLink={project.liveLink}
-            repoLink={project.repoLink}
-          />
-        ))}
-      </div>
+      <Collapsible title="Front-End Projects">
+        <div className="projects">
+          {frontEndProjects.map((project, index) => (
+            <Project
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              liveLink={project.liveLink}
+              repoLink={project.repoLink}
+            />
+          ))}
+        </div>
+      </Collapsible>
+
+      <Collapsible title="Back-End Projects">
+        <div className="projects">
+          {backEndProjects.map((project, index) => (
+            <Project
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              liveLink={project.liveLink}
+              repoLink={project.repoLink}
+            />
+          ))}
+        </div>
+      </Collapsible>
+
+      <Collapsible title="Full-Stack Projects">
+        <div className="projects">
+          {fullStackProjects.map((project, index) => (
+            <Project
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              liveLink={project.liveLink}
+              repoLink={project.repoLink}
+            />
+          ))}
+        </div>
+      </Collapsible>
+
+      <Collapsible title="Collaborative Projects">
+              <div className="projects">
+                {collaborativeProjects.map((project, index) => (
+                  <Project
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    liveLink={project.liveLink}
+                    repoLink={project.repoLink}
+                  />
+                ))}
+              </div>
+            </Collapsible>
+
+      <Collapsible title="Other Projects">
+        <div className="projects">
+          {otherProjects.map((project, index) => (
+            <Project
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              liveLink={project.liveLink}
+              repoLink={project.repoLink}
+            />
+          ))}
+        </div>
+      </Collapsible>
+
+      
     </section>
   );
 };
