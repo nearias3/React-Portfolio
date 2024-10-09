@@ -174,6 +174,8 @@ const Portfolio = () => {
 
       <Collapsible 
       title="Back-End Projects"
+      isOpen={activeCollapsible === "Back-End Projects"}
+      onToggle={() => handleCollapsibleToggle("Back-End Projects")}
       >
         <div className="projects">
           {backEndProjects.map((project, index) => (
@@ -189,7 +191,11 @@ const Portfolio = () => {
         </div>
       </Collapsible>
 
-      <Collapsible title="Full-Stack Projects">
+      <Collapsible 
+      title="Full-Stack Projects"
+      isOpen={activeCollapsible === "Full-Stack Projects"}
+      onToggle={() => handleCollapsibleToggle("Full-Stack Projects")}
+      >
         <div className="projects">
           {fullStackProjects.map((project, index) => (
             <Project
@@ -204,7 +210,11 @@ const Portfolio = () => {
         </div>
       </Collapsible>
 
-      <Collapsible title="Collaborative Projects">
+      <Collapsible 
+      title="Collaborative Projects"
+      isOpen={activeCollapsible === "Collaborative Projects"}
+      onToggle={() => handleCollapsibleToggle("Collaborative Projects")}
+      >
         <div className="projects">
           {collaborativeProjects.map((project, index) => (
             <Project
@@ -219,7 +229,10 @@ const Portfolio = () => {
         </div>
       </Collapsible>
 
-      <Collapsible title="Other Projects">
+      <Collapsible title="Other Projects"
+      isOpen={activeCollapsible === "Other Projects"}
+      onToggle={() => handleCollapsibleToggle("Other Projects")}
+      >
         <div className="projects">
           {otherProjects.map((project, index) => (
             <Project
