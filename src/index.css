@@ -42,8 +42,6 @@ h1 {
   line-height: 1.1;
 }
 
-
-
 @keyframes titleAnimation {
   0% {
     letter-spacing: 2px;
@@ -141,4 +139,28 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: .1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: #00bebebc;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00a4a7;
 }

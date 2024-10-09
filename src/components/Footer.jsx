@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        &copy; {new Date().getFullYear()} Nicole Arias. All rights reserved.
+        &copy; {new Date().getFullYear()} Nicole Hernandez. All rights reserved.
       </p>
       <div className="footer-links">
         <a
