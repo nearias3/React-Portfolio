@@ -8,6 +8,8 @@ const Contact = () => {
     message: "",
   });
 
+  const [formStatus, setFormStatus] = useState("");
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
