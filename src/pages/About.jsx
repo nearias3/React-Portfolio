@@ -21,8 +21,7 @@ const About = () => {
         journey has allowed me to build a solid foundation in web development
         technologies. This portfolio showcases my journey, featuring projects
         that reflect my commitment to creating user-friendly and efficient
-        applications. Explore my work below and see how I bring creativity and
-        technical knowledge together!
+        applications. 
       </p>
     </section>
   );

@@ -8,9 +8,8 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          My GitHub
         </a>
-        {" | "}
       </div>
     </footer>
   );

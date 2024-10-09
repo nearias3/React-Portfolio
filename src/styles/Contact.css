@@ -26,9 +26,9 @@ input, textarea {
 
 .error {
   color: red;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
   text-align: left;
-  margin-top: -0.5rem;
 }
 
 button {

@@ -5,14 +5,7 @@ import images from "../assets/images";
 import "../styles/Portfolio.css";
 
 const frontEndProjects = [
-  {
-    title: "Code Refactor",
-    description:
-      "This app is a refactor of a website. I cleaned up the code, fixed a couple of issues for the client, and made it more accessible.",
-    image: images.challenge01,
-    liveLink: "https://nearias3.github.io/Challenge-01/",
-    repoLink: "https://github.com/nearias3/Challenge-01",
-  },
+  
   {
     title: "Payroll Tracker",
     description:
@@ -41,36 +34,12 @@ const frontEndProjects = [
   },
 
   {
-    title: "README Generator",
-    description:
-      "In this app, the user can automate the creation of README files using a node powered prompt in the terminal.",
-    image: images.challenge09,
-    repoLink: "https://github.com/nearias3/README-Generator",
-  },
-
-  {
-    title: "Logo Maker",
-    description:
-      "This app allows the user to automate the creation of an SVG logo. In the terminal, the user is prompted to choose their color, shape, and text.",
-    image: images.challenge10,
-    repoLink: "https://github.com/nearias3/SVG-Logo-Maker",
-  },
-
-  {
     title: "Note Taker",
     description:
       "This app provides users with space to take notes. They can input their notes, save them on their browser, and delete them as needed.",
     image: images.challenge11,
     liveLink: "https://note-taker-kohj.onrender.com",
     repoLink: "https://github.com/nearias3/Miniature-Eureka",
-  },
-
-  {
-    title: "SQL Employee Tracker",
-    description:
-      "This command-line application allows users to manage a company's employee database using node, inquirer, and postgreSQL.",
-    image: images.challenge12,
-    repoLink: "https://github.com/nearias3/SQL-Employee-Tracker",
   },
 ];
 
@@ -116,7 +85,7 @@ const collaborativeProjects = [
   {
     title: "BookNest",
     description:
-      "In this collaborative project, we bring you BookNest, an app that facilitate's peer-to-peer book lending! Users can create their own collection of books, share with others, and borrow from within their communities.",
+      "In this collaborative project, we bring you BookNest, an app that facilitates peer-to-peer book lending! Users can create their own collection of books, share with others, and borrow from within their communities.",
     image: images.project2,
     liveLink: "https://p2-book-nest.onrender.com/",
     repoLink: "https://github.com/Lixiviate/P2-Book-Nest",
@@ -124,6 +93,22 @@ const collaborativeProjects = [
 ];
 
 const otherProjects = [
+  {
+    title: "SQL Employee Tracker",
+    description:
+      "This command-line application allows users to manage a company's employee database using node, inquirer, and postgreSQL.",
+    image: images.challenge12,
+    repoLink: "https://github.com/nearias3/SQL-Employee-Tracker",
+  },
+
+  {
+    title: "README Generator",
+    description:
+      "In this app, the user can automate the creation of README files using a node powered prompt in the terminal.",
+    image: images.challenge09,
+    repoLink: "https://github.com/nearias3/README-Generator",
+  },
+
   {
     title: "Text Editor",
     description:
